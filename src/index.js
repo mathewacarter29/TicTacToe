@@ -35,13 +35,16 @@ checkForWinner = () => {
     const winner = check(0, 1, 2) + check(3, 4, 5) + check(6, 7, 8) + check(0, 3, 6) + check(1, 4, 7)
         + check(2, 5, 8) + check(0, 4, 8) + check(2, 4, 6);
     if (winner != '') {
-        document.getElementById('winnerText').textContent = "Winner is " + winner + "!"
+        document.getElementById('winnerText').textContent = "Winner is " + winner[0] + "!"
             + "\nPress restart to play again";
         document.getElementById('winnerText').style.color = "green";
         canPlay = false;
-        return true;
     }
-    return false;
+    else if (!currentBoard.includes(' ')) {
+        document.getElementById('winnerText').textContent = "Tie game!\nPress restart to play again"
+        document.getElementById('winnerText').style.color = "red";
+        canPlay = false;
+    }
 }
 
 check = (id1, id2, id3) => {
