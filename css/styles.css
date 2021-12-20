@@ -1,0 +1,64 @@
+.box {
+  background-color: lightgray;
+  border: 2px solid black;
+  color: black;  
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 100px;
+  height: 200px;
+  width: 200px;
+}
+
+.title_text {
+  font-family: 'Courier New', Courier, monospace;
+  color: black;
+  text-align: center;
+  letter-spacing: 4px;  
+}
+
+.winner_text {
+  font-family: 'Courier New', Courier, monospace;
+  color: black;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.box:hover {
+  background-color: hotpink;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  grid-template-rows: 200px 200px 200px;
+  margin: auto;
+  width: 600px;
+}
+
+.main {
+  display: flexbox;
+  align-items: center;
+  border: 2px solid black;
+  text-align: center;
+}
+
+.restartButton {
+  background-color:rgb(240, 78, 78);
+  border: 2px solid black;
+  border-radius: 10px;
+  font-family: 'Courier New', Courier, monospace;
+  color: black;  
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: xx-large;
+  height: 10%;
+  width: 150px;
+  margin: 2% auto;
+}
+
+.restartButton:hover {
+  background-color: darkred;
+  color: white;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+    <script src="src/index.js"></script>
+</head>
+
+<body>
+
+    <div id="main" class="main">
+        <div id="title">
+            <h1 class="title_text"><strong>Welcome to Tic Tac Toe!</strong></h1>
+            <h1 id="winnerText" class="winner_text">Game is in progress...</h1>
+        </div>
+
+        <div id="board" class="board">
+            <button id="0" class="box" onclick="onClick(this.id);"></button>
+            <button id="1" class="box" onclick="onClick(this.id);"></button>
+            <button id="2" class="box" onclick="onClick(this.id);"></button>
+            <button id="3" class="box" onclick="onClick(this.id);"></button>
+            <button id="4" class="box" onclick="onClick(this.id);"></button>
+            <button id="5" class="box" onclick="onClick(this.id);"></button>
+            <button id="6" class="box" onclick="onClick(this.id);"></button>
+            <button id="7" class="box" onclick="onClick(this.id);"></button>
+            <button id="8" class="box" onclick="onClick(this.id);"></button>
+
+        </div>
+
+        <div id="restartButton">
+            <button class="restartButton" onclick="clickReset();">Restart</button>
+        </div>
+    </div>
+
+</body>
+
+</html>
